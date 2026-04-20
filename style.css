@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1108px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #bbd0e2;
+    box-shadow: 0 0 2px #bbd0e2;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.logo img {
+    width: 80px;
+
+}
+
+.nav-link ul {
+    gap: 20px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: grey;
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: darkblue;
+}
+
+.search-box {
+    height: 60px;
+    gap: 8px;
+
+}
+
+.news-input {
+    width: 200px;
+    height: 40px;
+    padding-inline: 19px;
+    border-radius: 6px;
+    border: 2px solid #bbd0e2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-button {
+    background-color: blue;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-button:hover {
+    background-color: blueviolet;
+}
+
+main {
+    margin-top: 100px;
+    padding-block: 0px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecd4;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecd4;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+
+}
+
+.news-source {
+    margin-block: 1px;
+}
